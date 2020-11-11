@@ -1,16 +1,12 @@
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 100, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var xScale = d3.scaleLinear()
     .range([0, width]);
+
 var yScale = d3.scaleLinear()
     .range([height, 0]);
-
-// add the tooltip area to the webpage
-var tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);
 
 var svg = d3.select("body")
     .append("svg")
@@ -18,23 +14,34 @@ var svg = d3.select("body")
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
+    
 d3.dsv(",", "data/clustered_pca.csv", function(d) {
     return {
-        song: d.song_name,
         artist: d.artist,
+        song: d.song_name,
+        popularity: d.popularity,
+        danceability: d.danceability,
+        energy: d.energy,
+        key: d.key,
+        loudness: d.loudness,
+        mode: d.mode,
+        speechiness: d.speechiness,
+        acousticness: d.acousticness,
+        instrumentalness: d.instrumentalness,
+        liveness: d.liveness,
+        valence: d.valence,
+        tempo: d.tempo,
         pca1: +d.pca1,
         pca2: +d.pca2,
-        cluster: d.cluster,
     }
     }).then(function(data){
 
-    var seedSong = data[0]['song']
+    var seedSong = data[0]['song'];
 
-    var colors = ['#a6611a', '#dfc27d', '#80cdc1', '#018571']
-    cluster_color = d3.scaleOrdinal()
-        .domain(data.map(d => d.cluster))
-        .range(colors)
+    recs = data.slice(1, 21);
+
+    songList = [];
+    for (i in recs) songList.push(recs[i]["song"]);
 
     // Compute the scales’ domains.
     xScale.domain(d3.extent(data, function(d) { return d.pca1; })).nice();
@@ -46,23 +53,41 @@ d3.dsv(",", "data/clustered_pca.csv", function(d) {
     const yaxis = d3.axisLeft()
         .scale(yScale);
 
-        // Add the X Axis
+    // Add the X Axis
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
         .call(xaxis);
 
-        // Add the Y Axis
+    // Add the Y Axis
     svg.append("g")
         .attr("class", "y axis")
         .call(yaxis)
-
-    const tip = d3.tip()
+    
+    // Add the tooltip
+    var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .offset([-9, 0])
+        .offset([-30, 0])
         .html(d => `<strong>Song: </strong><span class='details'>${d.song}<br></span>
         <strong>Artist: </strong><span class='details'>${d.artist}<br></span>`)
-
+    
+    // Add the tooltip
+    var tip2 = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([150, 0])
+        .html(d => `<strong>Popularity: </strong><span class='details'>${d.popularity}</span>
+            <strong>&nbsp;&emsp;&emsp;Danceability: </strong><span class='details'>${d.danceability}</span>
+            <strong>&emsp;&emsp;&emsp;Energy: </strong><span class='details'>${d.energy}<br></span>
+            <strong>Key: </strong><span class='details'>${d.key}</span>
+            <strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;Loudness: </strong><span class='details'>${d.loudness}</span>
+            <strong>&emsp;&emsp;&emsp;&emsp;&emsp;Speechiness: </strong><span class='details'>${d.speechiness}<br></span>
+            <strong>Acousticness: </strong><span class='details'>${d.acousticness}</span>
+            <strong>&emsp;Instrumentalness: </strong><span class='details'>${d.instrumentalness}</span>
+            <strong>&emsp;Liveness: </strong><span class='details'>${d.liveness}<br></span>
+            <strong>Valence: </strong><span class='details'>${d.valence}</span>
+            <strong>&nbsp;&nbsp;&emsp;&emsp;&emsp;Tempo: </strong><span class='details'>${d.tempo}</span>
+            <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Lyrical Valence: </strong><span class='details'>TEMP<br></span>`);
+    
     // Add the points!
     svg.selectAll("circle")
         .data(data)
@@ -72,34 +97,82 @@ d3.dsv(",", "data/clustered_pca.csv", function(d) {
         .attr("cx", function(d) {return xScale(d.pca1);})
         .attr("cy", function(d) {return yScale(d.pca2);})
         .attr("r",4)
-        .attr("fill", function(d) {if (d.song == seedSong){return "#d01c8b"}
-            else {return cluster_color(d.cluster)}})
+        .attr("fill", function(d) {if (d.song == seedSong){return "#01665e"}
+            if (songList.includes(d.song)) {return "#8c510a"}
+            else {return "#c7eae5"}})
         .attr("r", function(d) {if (d.song == seedSong){return 12}
+            if (songList.includes(d.song)) {return 6}
             else {return 4}})
         .call(tip)
+        .call(tip2)
         .on('mouseover',function(d){
             tip.show(d);
-            d3.select(this)
-              .style('opacity', 1)
-              .style('stroke-width', 3);
-          })
-          .on('mouseout', function(d){
+            tip2.show(d);
+            })
+        .on('mouseout', function(d){
             tip.hide(d);
-            d3.select(this)
-              .style('opacity', 0.8)
-              .style('stroke-width',0.3);
+            tip2.hide(d);
             })
-        .call(d3.zoom().on("zoom", function () {
-                svg.attr("transform", d3.event.transform)
-           }))
-          .append("g");
 
-    function zoom() {
-        svg.select(".x.axis").call(xaxis);
-        svg.select(".y.axis").call(yaxis);
-        svg.selectAll("polygon")			
-            .attr("transform", function(d, i) {
-                return "translate("+xScale(d.pca1)+","+yScale(d.pca2)+")";
-            })
-        }
-});
+    //add seed song legend
+    svg.append("circle")
+        .attr("cx",20)
+        .attr("cy",20)
+        .attr("r", 12)
+        .style("fill", "#01665e")
+        .append("text")
+        .attr("dx", function(d){return -20})
+        .text("Seed Song")
+    
+    svg.append("text")
+        .attr("x", 37)
+        .attr("y", 22)
+        .text("Seed Song")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
+
+    //add rec songs legend
+    svg.append("circle")
+        .attr("cx",20)
+        .attr("cy",50)
+        .attr("r", 6)
+        .style("fill", "#8c510a");
+
+    //add similarity notation legend
+    svg.append("text")
+        .attr("x", 22)
+        .attr("y", 390)
+        .text("+  Song has higher value")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
+
+    svg.append("text")
+        .attr("x", 250)
+        .attr("y", 390)
+        .text("=  Song has a similar value")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
+
+    svg.append("text")
+        .attr("x", 472)
+        .attr("y", 390)
+        .text("-  Song has a lower value")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
+
+
+    svg.append("text")
+        .attr("x", 37)
+        .attr("y", 52)
+        .text("Recommended Songs")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
+
+    // add title
+    svg.append("text")
+        .attr("x", width/2)
+        .attr("y", -40)
+        .style("text-anchor", "middle")
+        .style("font-size", "20px")
+        .text("What Songs are Similar to my Song?");
+    });
