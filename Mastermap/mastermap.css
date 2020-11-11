@@ -26,6 +26,7 @@ rect {
     color: #FFFAF0;
     border-radius: 1px;
     pointer-events: none;
+    font-size: 14px;
   }
   h1{
     font-family: Georgia;

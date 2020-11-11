@@ -1,5 +1,5 @@
-var margin = {top: 100, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+var margin = {top: 100, right: 20, bottom: 60, left: 20},
+    width = 860 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var xScale = d3.scaleLinear()
@@ -37,6 +37,7 @@ d3.dsv(",", "data/clustered_pca.csv", function(d) {
     }).then(function(data){
 
     var seedSong = data[0]['song'];
+    var seedArtist = data[0]['artist'];
 
     recs = data.slice(1, 21);
 
@@ -117,55 +118,53 @@ d3.dsv(",", "data/clustered_pca.csv", function(d) {
     //add seed song legend
     svg.append("circle")
         .attr("cx",20)
-        .attr("cy",20)
+        .attr("cy",360)
         .attr("r", 12)
         .style("fill", "#01665e")
         .append("text")
         .attr("dx", function(d){return -20})
-        .text("Seed Song")
     
     svg.append("text")
-        .attr("x", 37)
-        .attr("y", 22)
-        .text("Seed Song")
+        .attr("x", 40)
+        .attr("y", 360)
+        .text("'" + seedSong + "'")
         .style("font-size", "15px")
         .attr("alignment-baseline","middle");
 
     //add rec songs legend
     svg.append("circle")
         .attr("cx",20)
-        .attr("cy",50)
+        .attr("cy",390)
         .attr("r", 6)
         .style("fill", "#8c510a");
+    
+    svg.append("text")
+        .attr("x", 40)
+        .attr("y", 390)
+        .text("Recommended Songs")
+        .style("font-size", "15px")
+        .attr("alignment-baseline","middle");
 
     //add similarity notation legend
     svg.append("text")
-        .attr("x", 22)
-        .attr("y", 390)
-        .text("+  Song has higher value")
-        .style("font-size", "15px")
+        .attr("x", 725)
+        .attr("y", 355)
+        .text("+  Higher value")
+        .style("font-size", "12px")
         .attr("alignment-baseline","middle");
 
     svg.append("text")
-        .attr("x", 250)
-        .attr("y", 390)
-        .text("=  Song has a similar value")
-        .style("font-size", "15px")
+        .attr("x", 725)
+        .attr("y", 372)
+        .text("=  Similar value")
+        .style("font-size", "12px")
         .attr("alignment-baseline","middle");
 
     svg.append("text")
-        .attr("x", 472)
+        .attr("x", 729)
         .attr("y", 390)
-        .text("-  Song has a lower value")
-        .style("font-size", "15px")
-        .attr("alignment-baseline","middle");
-
-
-    svg.append("text")
-        .attr("x", 37)
-        .attr("y", 52)
-        .text("Recommended Songs")
-        .style("font-size", "15px")
+        .text("- Lower value")
+        .style("font-size", "12px")
         .attr("alignment-baseline","middle");
 
     // add title
@@ -174,5 +173,5 @@ d3.dsv(",", "data/clustered_pca.csv", function(d) {
         .attr("y", -40)
         .style("text-anchor", "middle")
         .style("font-size", "20px")
-        .text("What Songs are Similar to my Song?");
+        .text("What Songs are Similar to '" + seedSong + "' by " + seedArtist + "?");
     });
