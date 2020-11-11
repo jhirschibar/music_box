@@ -1,0 +1,61 @@
+rect {
+    fill: transparent;
+    shape-rendering: crispEdges;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.1);
+    shape-rendering: crispEdges;
+  }
+  
+  .axisLine {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: rgba(0, 0, 0, 0.5);
+    stroke-width: 2px;
+  }
+  
+  .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Georgia, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFFAF0;
+    border-radius: 1px;
+    pointer-events: none;
+  }
+  h1{
+    font-family: Georgia;
+    text-align: center;
+  }
+
+  text{
+    font-family:"avenir next", Georgia, sans-serif;
+  }
+
+  select{
+    font-family:"avenir next", Georgia, sans-serif;
+  }
+
+  option{
+    font-family:"avenir next", Georgia, sans-serif;
+  }
+
+  label {
+    font-family:"avenir next", Georgia, sans-serif;
+  }
+
+  option{
+    font-family:"avenir next", Georgia, sans-serif;
+  }
+
+  .tick line{
+    visibility:hidden;
+  }
+
+  .tick{
+    visibility: hidden;
+  }

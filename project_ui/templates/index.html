@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="static/style.css">
 <img src='static/MusicBox_Banner.png' alt='MusicBox Logo' width=50% height='auto' class="center">
@@ -182,4 +183,142 @@
 </div>
 {{h}}
 
+=======
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<h1>Out of the Music Box</h1>
+<body>
+  <script type="text/javascript" src="static/d3.v5.min.js"></script>
+  <script src='static/dropdown.js'></script>
+  
+    
+
+    <form method="POST" autocomplete="off">
+      <div class='col-xs-12 col-sm-12 col-md-10 col-lg-10'>
+          <div class='input-group'>
+              <input id="autocomplete" class='form-control' type='text' name='songSearch'
+                     placeholder='Enter song...'/>
+              
+  
+          </div>
+      </div>
+    
+  <div class="main">
+  <h2>danceability</h2>
+  <span class="help-tip"><p>Hi</p></span>
+  </div>
+  
+    <div class="rangeslider"> 
+      <input formmethod="POST" id="sliderRange" class="myslider"  type="range" name='dance' min="1" max="5" value="3" />
+      <p>Value: <span id="demo", class="rangeVal"></span></p> 
+    </div>  
+  
+
+    <div class="main">
+      <h2>energy</h2>
+      <span class="help-tip"><p>Hi</p></span>
+      </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="energy"/> 
+    <p>Value: <span id="demo", class="rangeVal"></span></p>             
+  </div> 
+  
+  <div class="main">
+    <h2>key</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="key"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>loudness</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="loudness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>mode</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="0" max="1" value="1"
+                    class="myslider" id="sliderRange" name="mode"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>speech</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="speech"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>acousticness</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="acousticness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>instrumentalness</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="instrumentalness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>liveness</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="liveness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>valence</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="valence"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="main">
+    <h2>tempo</h2>
+    <span class="help-tip"><p>Hi</p></span>
+    </div>
+  <div class="rangeslider"> 
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="tempo"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+  <input type='submit'/>
+
+
+</form>
+
+{{h}}
+
+>>>>>>> c6921bbb7925be5590f91ab11056d37b0150e4ca
 </body>
