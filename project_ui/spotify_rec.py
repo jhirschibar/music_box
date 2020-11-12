@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
@@ -17,7 +16,6 @@ def spotify_rec(seed_song):
             rec_list.append(track)
         return rec_list
 
-=======
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
@@ -36,4 +34,3 @@ def spotify_rec(seed_song):
             rec_list.append(track)
         return rec_list
 
->>>>>>> c6921bbb7925be5590f91ab11056d37b0150e4ca
