@@ -4,9 +4,6 @@ import pandas as pd
 from sklearn.preprocessing import normalize, scale, Normalizer
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
-import validators
-import requests
-from bs4 import BeautifulSoup
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
