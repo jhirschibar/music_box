@@ -41,9 +41,9 @@ def search_results(search,user_inputs):
     artist=search[1]
     album = search[2]
     seed_index=df.index[(df['song_name']==song) & (df['artist']==artist) & (df['album']==album)][0]
-    sp_rec=spotify_rec(df.iloc[seed_index,0])
+    #sp_rec=spotify_rec(df.iloc[seed_index,0])
     df,iframes,df_graph=recommendation(seed_index,user_inputs)
-    return render_template('index.html',inputs=user_inputs,tables=[df.to_html(classes='data')],titles=df.columns.values,iframes=iframes,sp_rec=sp_rec,df_graph=df_graph)  
+    return render_template('index.html',inputs=user_inputs,tables=[df.to_html(classes='data')],titles=df.columns.values,iframes=iframes,df_graph=df_graph)  
 
 @app.route('/getMyJson')
 def getMyJson():
