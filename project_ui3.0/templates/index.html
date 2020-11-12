@@ -1,0 +1,172 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<img src='static/MusicBox_Banner.png' alt='MusicBox Logo' width=50% height='auto' class="center">
+<head>
+  <script src="{{ url_for('static', filename='jquery-3.5.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='d3.v5.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='d3-tip.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='dropdown.js') }}"}></script>
+</head>
+<body>
+  
+  
+  
+  
+  
+    <form method="POST" autocomplete="off" class="button">
+      
+
+<div class="row">
+  
+
+  <div class="column left">
+    <div style="text-align: right; vertical-align: middle;">
+      <h2>Enter Song:</h2>
+    </div>
+    <div style="margin-top: 20px; margin-bottom: 20;">
+      <h2>Adjust song features</h2>
+      <span class="help-tip"><p>Use the sliders to indicate whether you would like the song features for your recommended songs to be the same, higher, or lower than your seed song. Once you have adjusted the features, hit 'Submit' and see your recommendations!</p></span>
+    </div>
+    
+  
+    <div class="rangeslider"> 
+      <h3>danceability</h3>
+      <span class="help-tip"><p>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable. </p></span>
+      <input formmethod="POST" id="sliderRange" class="myslider"  type="range" name='dance' min="1" max="5" value="3" />
+      <p>Value: <span id="demo", class="rangeVal"></span></p> 
+    </div>  
+  
+
+  <div class="rangeslider"> 
+    <h3>energy</h3>
+      <span class="help-tip"><p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="energy"/> 
+    <p>Value: <span id="demo", class="rangeVal"></span></p>             
+  </div> 
+  
+  <div class="rangeslider"> 
+    <h3>key</h3>
+    <span class="help-tip"><p>The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="key"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>loudness</h3>
+    <span class="help-tip"><p>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="loudness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+
+  <div class="rangeslider"> 
+    <h3>speech</h3>
+    <span class="help-tip"><p>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="speech"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>acousticness</h3>
+    <span class="help-tip"><p>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="acousticness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>instrumentalness</h3>
+    <span class="help-tip"><p>Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly “vocal”. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0. </p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="instrumentalness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>liveness</h3>
+    <span class="help-tip"><p>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="liveness"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>valence</h3>
+    <span class="help-tip"><p>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="valence"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>tempo</h3>
+    <span class="help-tip"><p>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. </p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="tempo"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h3>lyrical valence</h3>
+    <span class="help-tip"><p>A measure of the positivity conveyed by the lyrics of the song.</p></span>
+    <input type="range" min="1" max="5" value="3"
+                    class="myslider" id="sliderRange" name="tempo"> 
+    <p>Value: <span id="demo" class="rangeVal"></span></p> 
+  </div>
+  
+</div>
+<div class="column middle">
+  <div class='col-xs-12 col-sm-12 col-md-10 col-lg-10'>
+    <div class='input-group'>
+        <input id="autocomplete" class='form-control' type='text' name='songSearch'
+               placeholder='Enter song...'/>
+        
+
+    </div>
+</div>
+  <div id="graph">
+    <script src="{{ url_for('static', filename='mastermap.js') }}"}></script>
+    <script>
+    var x = '{{home_page}}'
+    if(x==1){
+        homeGraph();
+        }else{
+        updateGraph();
+    };
+    </script>
+  </div>
+  <div>
+    <p><strong>Why aren’t my recommendations next to the song I picked?</strong></p>
+      <p style="margin-right:10px">The data points shown here are the 250 most similar songs to your seed song based on your inputs. We’re sure you might be wondering why your song recommendations aren’t right next to the song you picked. The MusicBox algorithm takes into account many different features and unfortunately we can’t yet build a graph in 12-dimensional space. The graph you see takes all 12 musical features and reduces them down to 2-dimensional space; while the songs may look farther apart, they are definitely the right recommendations!</p>
+  </div>
+</div>
+
+
+<div class="column right">
+  <div>
+    <input type='submit' id="button" class="button" onclick="remove();"/>
+  </form>
+  </div>
+
+
+  
+
+<div style="margin-top: 20px; margin-bottom: 20;">
+  <h2>Recommended Songs</h2>
+</div>
+
+{% for iframe in iframes %}
+    
+        <div class="spotify">
+         <iframe id="iframe{{loop.index}}" src="{{iframe}}" frameborder="0" allowtransparency="true" allow="encrypted-media" width="530" height="100"></iframe>
+        </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+</body>

@@ -1,0 +1,251 @@
+﻿,artist,song_name,popularity,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,pca1,pca2
+0,Rick Astley,Never Gonna Give You Up,=,=,=,=,=,=,=,=,=,=,=,=,-17.49541788,-5.06971781
+1,Uncle Kracker,Good to Be Me,-,+,+,=,-,=,-,-,-,+,+,+,-20.55591582,-4.808760677
+2,Block B,NalinA,+,+,+,=,-,=,+,-,-,-,+,+,26.89800384,2.482968635
+3,Lil Silvio & El Vega,Tienes La Magia,-,+,+,+,-,=,+,-,-,+,+,+,-19.9708033,-16.88603227
+4,MÃ¼nchner Zwietracht,Schifoan,-,=,+,+,-,=,+,+,-,+,+,+,-19.32245608,-21.80019394
+5,Miike Snow,My Trigger,+,+,+,+,-,=,+,+,-,-,+,+,30.95411652,-12.97254992
+6,Suga Free,Fu** Wit You,+,+,+,=,-,=,+,+,-,-,+,+,-0.718965722,-2.258883265
+7,Brian Wilson,Night Time - Remastered Version,+,+,+,+,-,=,-,+,-,+,+,+,-11.35635103,9.558684864
+8,Matt Nathanson,Modern Love,+,+,+,=,-,=,-,-,-,-,+,+,14.66251314,-4.162316861
+9,Dwight Yoakam,An Exception to the Rule,+,+,+,+,-,=,-,+,-,+,+,+,-4.579659077,-18.87129029
+10,Collin Raye,Stuck in the Middle With You,+,+,+,+,-,=,-,+,-,+,+,+,-16.82172407,12.75560033
+11,Foster The People,Houdini,+,+,+,=,-,=,+,-,+,-,+,+,46.38625285,0.031072096
+12,The Antonelli Orchestra,September,-,+,+,+,-,=,-,-,-,+,+,+,-22.24249832,7.972679829
+13,Colt Ford,Washed in the Mud (feat. Randy Houser),+,+,+,+,-,=,+,-,-,-,+,+,-0.48511214,-19.31945907
+14,Barry Manilow,Come Monday,+,+,+,+,-,=,+,-,+,-,+,+,-14.49486368,-20.16764304
+15,Victorious Cast,Don't You (Forget About Me),+,+,+,=,-,=,-,-,-,+,+,+,18.36861976,-1.674261157
+16,Shania Twain,In My Car (I'll Be The Driver),+,+,+,+,-,=,+,+,-,+,+,+,0.158229647,14.02641815
+17,GOT7,RUN AWAY,+,+,+,=,-,=,+,-,-,-,+,+,29.87314457,2.863564876
+18,Drowning Pool,Reminded,+,+,+,=,-,=,+,-,+,+,+,+,20.23018584,-0.49679107
+19,Lauren Alaina,Ladies In The '90s,=,+,+,+,-,=,+,-,-,+,-,+,-15.72744755,-18.46716238
+20,Aaron Carter,I Want Candy,+,+,+,=,-,=,+,-,+,-,+,+,-4.172472356,-6.662480749
+21,Lonestar,No News,+,+,+,=,-,=,-,+,-,-,+,+,5.819109202,1.698739534
+22,f(x),Boom Bang Boom,+,+,+,+,-,=,+,-,+,-,+,+,5.938460439,-14.49253464
+23,Swift,Unbelievable,-,+,+,=,-,=,+,-,+,+,+,+,-18.94565898,-9.36933654
+24,DMX,Y'all Niggaz,-,+,+,+,-,=,+,-,-,+,+,+,-17.72506829,-18.6219429
+25,The Suicide Machines,Empty Time,+,+,+,+,-,=,+,-,+,+,+,+,0.572965673,-19.69338418
+26,The Fratellis,Everybody Knows You Cried Last Night,+,+,+,+,-,=,+,-,-,-,+,+,12.62687606,-11.67228618
+27,ThalÃ­a,Garabato Colorado,+,+,+,+,-,=,-,+,-,+,+,+,-6.999164766,7.119584239
+28,Alex Sensation,La Calle,+,+,+,+,-,=,+,+,-,-,+,+,-11.52420372,-19.75057525
+29,Jonathan McReynolds,Oh!,+,+,+,+,-,=,+,+,-,+,+,+,2.387280346,12.42528281
+30,Mandy Moore,Love Shot,+,+,+,+,-,=,-,-,+,-,+,+,-4.241941117,-13.78250978
+31,Gwen Stefani,Hollaback Girl - Hollatronix Remix by Diplo,+,+,+,+,-,=,+,+,+,-,+,+,-0.452442102,11.01367677
+32,Plain White T's,Lazy Day Afternoon,+,+,+,=,-,=,-,-,-,+,+,+,2.309096437,-2.277190214
+33,Jessie J,Mamma Knows Best,+,+,-,+,-,=,+,+,-,+,+,+,-16.74941484,-18.37168636
+34,DMX,The Prayer V,+,+,+,+,-,=,+,-,-,-,+,+,-0.711175942,-17.60632521
+35,Sara Evans,Coalmine,+,+,+,=,-,=,+,-,+,+,-,+,5.575135969,-4.093499853
+36,Brooks & Dunn,Boot Scootin' Boogie,+,+,+,+,-,=,+,+,-,+,+,+,-17.78168738,12.38823901
+37,Eli Young Band,Your Last Broken Heart,+,+,+,+,-,=,-,-,+,+,+,+,7.313429444,-17.2741322
+38,Toby Keith,Who's Your Daddy?,+,+,+,+,-,=,+,+,+,-,+,+,26.39471336,13.93898258
+39,Kanye West,Diamonds From Sierra Leone - Bonus Track,+,+,+,+,-,=,+,+,-,+,-,+,3.476523675,-18.76975315
+40,Bullet For My Valentine,Last to Know,+,-,+,+,-,=,+,-,+,+,+,+,9.034727607,-15.0256365
+41,A*Teens,I Promised Myself - The Attic Remix,+,+,+,+,-,=,+,-,+,-,+,+,-13.49273632,10.46410917
+42,We The Kings,Love Again,+,+,+,+,-,=,+,-,-,+,+,+,-1.572474522,11.85461869
+43,Plain White T's,Land Of The Living,+,+,+,+,-,=,+,-,-,-,+,+,-0.450169511,10.99428184
+44,Raven-SymonÂ¿,Double Dutch Bus,+,+,+,=,-,=,-,-,-,+,+,+,-9.898225324,-1.498869954
+45,(Hed) P.E.,Whitehouse,+,+,+,+,-,=,+,-,-,+,+,+,-12.46194667,-20.29037214
+46,The Chainsmokers,Somebody - Fluencee Remix,+,+,+,=,-,=,+,-,-,-,+,+,-2.454931641,-4.393376479
+47,CÃ©line Dion,One Heart,+,+,+,=,-,=,-,-,-,+,+,+,16.91905303,1.671301144
+48,David Bowie,The Next Day,+,+,+,+,-,=,+,-,-,+,+,+,14.07834187,7.906749921
+49,Foo Fighters,Make a Bet,+,+,+,+,-,=,-,-,+,+,+,+,0.653538999,10.27727632
+50,The Temptations,(Every Time I Turn Around) Back In Love Again,+,+,+,=,-,=,+,+,+,-,+,+,-5.034151997,-7.77322088
+51,Ashley Tisdale,Switch,+,+,+,=,-,=,+,-,-,+,+,+,4.76095527,-5.561785528
+52,Descendents,Testosterone,+,+,+,+,-,=,+,-,+,+,+,+,4.870307527,-14.04001617
+53,Leona Lewis,Naked,+,+,+,=,-,=,-,-,-,-,-,+,5.613731516,-4.383249682
+54,Big D and the Kids Table,5 Kids Down,+,+,+,=,-,=,+,-,+,-,+,+,-7.509260954,-4.313913528
+55,Michael Jackson,Remember the Time,+,+,+,=,-,=,+,+,+,-,+,+,30.79736178,-4.133820415
+56,Set It Off,Different Songs,+,+,+,+,-,=,-,-,-,-,+,+,23.33824857,14.17224521
+57,Tony Christie,Is This The Way To Amarillo,+,+,+,+,-,=,-,-,-,-,+,+,25.66679962,19.45624962
+58,Wang Chung,Everybody Have Fun Tonight,+,+,+,+,-,=,-,-,+,-,+,+,-10.5913348,11.40860104
+59,YELLOW MAGIC ORCHESTRA,LIMBO,+,+,+,+,-,=,+,+,+,+,+,+,-7.97852331,6.891018589
+60,Shakira,Spy (feat. Wyclef Jean),+,+,+,=,-,=,+,+,+,-,+,+,13.152163,-0.367245233
+61,SEVENTEEN,20 - Japanese ver.,+,+,+,+,-,=,+,+,-,-,+,+,21.66925617,-11.39686867
+62,The Format,The First Single (You Know Me),+,+,+,+,-,=,+,-,-,-,+,+,-20.34701676,8.902536918
+63,Steve Grimmett,Hair Of The Dog,-,+,+,+,-,=,-,-,+,-,+,+,-23.43992731,9.403277311
+64,Art vs Science,A.I.M. Fire!,+,+,+,+,-,=,-,-,+,+,+,+,-9.234635526,8.774537882
+65,Toby Keith,Country Comes To Town,+,+,+,+,-,=,+,-,-,-,+,+,13.84583803,9.668344897
+66,George McCrae,All Around The World - Sunshine Mix,-,+,+,+,-,=,+,-,+,-,+,+,-20.22160496,-14.98607336
+67,Stray Kids,4419,+,+,+,+,-,=,+,+,-,-,+,+,30.7093556,-26.40762021
+68,The Rolling Stones,It's Only Rock'n'Roll (But I Like It),+,+,+,+,-,=,+,+,+,-,+,+,5.314628895,13.17382737
+69,Motion City Soundtrack,Over It Now,+,+,+,=,-,=,+,-,-,-,+,+,0.271916642,-2.119833437
+70,Static-X,S.O.M.,+,+,+,+,-,=,+,-,+,+,+,+,1.95580717,-14.88204679
+71,Say Anything,Overbiter,+,+,+,=,-,=,-,+,-,-,+,+,2.042158355,-7.894157157
+72,The Monkees,What Would Santa Do,+,+,+,+,-,=,+,-,+,-,+,+,-13.08394645,7.36965628
+73,Demi Lovato,Neon Lights,+,+,+,+,-,=,+,-,-,-,+,+,-6.262314544,9.174701118
+74,Toots & The Maytals,Hit Meck - Radio Edit,+,+,+,+,-,=,+,+,-,+,+,+,-15.53991495,25.97652039
+75,EXO,Touch It - Live,+,+,+,=,-,=,+,+,-,+,-,+,11.67289345,-4.444467277
+76,Kid Rock,All Summer Long,+,+,+,+,-,=,-,-,-,-,+,+,-13.16532944,-14.95843072
+77,Dwight Yoakam with Buck Owens,"Alright, I'm Wrong",+,+,+,+,-,=,-,-,-,-,+,+,-8.293762563,9.287031904
+78,John Mellencamp,Lonely Ol' Night,+,+,+,+,-,=,-,-,+,-,+,+,22.4081132,13.5813552
+79,Party-Wahnsinn,Pommes mit Senf (I Promised Myself),-,+,+,+,-,=,+,+,+,-,+,+,-23.64547958,10.96333101
+80,No Doubt,Hella Good,+,+,+,=,-,=,-,-,+,-,+,+,-13.76730974,-2.748335826
+81,EXO,Let Out the Beast - Chinese Version,+,+,+,+,-,=,+,-,+,-,+,+,7.140907591,6.97480676
+82,R.E.M.,Shiny Happy People,+,-,+,+,-,=,-,-,+,+,+,+,-19.97007912,6.044218391
+83,Alborosie,C'est la vie,+,+,+,+,-,-,+,-,-,+,+,+,-9.103795154,7.797179536
+84,Lenny Kravitz,Where Are We Runnin'?,+,+,+,+,-,-,-,-,+,+,+,+,23.93919983,17.28249476
+85,REO Speedwagon,Sleigh Ride,-,+,+,+,-,=,-,-,-,+,+,+,-23.78067193,11.982264
+86,Darlene Love,Among The Believers,+,+,+,+,-,=,+,-,-,-,+,+,-18.16730233,7.671113204
+87,Oscar Zia,Ballare Con Me,+,+,+,+,-,=,+,-,-,+,+,+,-18.42502207,9.628453126
+88,The Escape Frame,"Nothin' But A ""G"" Thang",+,-,+,+,-,=,+,-,-,+,-,+,0.115607637,-16.23363938
+89,Paula Abdul,It's All About Feeling Good,+,+,+,=,-,=,+,+,+,-,+,+,-12.10191045,-7.727964356
+90,N.E.R.D,Baby Doll,=,+,+,+,-,=,+,-,+,+,+,+,-20.85948279,20.43535167
+91,Donny Osmond,Don't Need No Money,-,+,+,=,-,=,+,+,-,-,+,+,-20.9582522,-1.764776444
+92,Sigala,Easy Love,+,+,+,+,-,=,+,+,+,-,+,+,43.56096853,13.79562249
+93,Chase Rice,"I Like Drinking, Cause It's Fun",+,+,+,=,-,=,+,+,-,+,+,+,12.67594301,-4.40423002
+94,DREAMERS,DRUGS,-,+,+,+,-,=,+,-,+,-,-,+,-19.84302112,-17.85423778
+95,Selena,Puede Ser,-,+,+,+,-,=,-,-,+,-,+,+,-23.51873258,10.00347622
+96,Kevin Rudolf,Coffee And Donuts,-,+,+,+,-,=,+,-,+,-,+,+,-22.86392364,5.048134931
+97,Groovy 69,Instant Reply - 132 BPM,=,+,+,+,-,=,+,-,+,+,+,+,-19.94894532,13.52419899
+98,The Used,The Taste of Ink,+,+,+,+,-,=,+,-,-,+,-,+,-16.4836048,-20.37880534
+99,Laura Branigan,Gloria,-,+,+,+,-,=,-,+,+,+,+,+,-23.82082859,12.29467213
+100,Lacy Cavalier,Every Time It Rains,+,+,+,+,-,=,+,+,-,-,+,+,1.587984304,-12.09608631
+101,Skid Row,Lamb,+,+,+,=,-,=,+,-,+,+,-,+,-6.776860057,-2.210091508
+102,The Cab,I'll Run,-,+,+,+,-,=,+,-,-,+,+,+,-22.26426844,8.141099855
+103,Fey,Te Pertenezco,+,+,+,+,-,=,+,-,+,-,+,+,-20.93036771,13.31780394
+104,Jimmy Cliff,One More - Alternate Version,+,+,+,=,-,=,+,+,-,-,+,+,-5.222238945,1.297877924
+105,Caravan,So Fresh,+,+,+,+,-,=,+,+,-,-,-,+,7.919934918,-14.21677087
+106,Rascalz,Sharpshooter (Best of Da Best),-,+,+,+,-,=,+,-,-,+,-,+,-17.60364073,-19.54015069
+107,Sech,Fabuloso,+,+,+,+,-,=,+,-,+,-,+,+,61.25596544,-20.92969027
+108,Emarosa,So Bad,+,+,+,+,-,=,+,-,-,-,+,+,22.95228611,17.10009751
+109,Belanova,Y Mi CorazÃ³n...,+,+,+,+,-,=,-,-,+,-,+,+,8.803309848,17.30671653
+110,SUPER JUNIOR,I do ë‘ ë²ˆì§¸ ê³ ë°±,+,+,+,=,-,=,+,-,-,-,-,+,15.00244124,0.905745757
+111,Jowell & Randy,Dile la Verdad - Remix,+,+,+,+,-,=,+,+,-,-,+,+,34.4235199,-8.689109194
+112,Big D and the Kids Table,Put It in a Song,+,+,+,+,-,-,+,+,-,+,+,+,-10.20182254,-29.74957132
+113,Mustard Plug,Skank by Numbers,+,+,+,+,-,=,+,-,+,+,+,+,-12.64438224,-18.90944091
+114,Big D and the Kids Table,Freeze Up,+,+,+,+,-,=,+,-,-,-,-,+,-7.244468533,-21.60615068
+115,Flyleaf,Set Me On Fire,+,+,+,+,-,=,+,-,-,+,-,+,30.49096301,-17.10483187
+116,Bob Marley & The Wailers,Johnny Was,+,+,+,+,-,-,-,-,-,+,+,+,20.71482534,-27.08652984
+117,Gabrielle Aplin,You Don't Like Dancing,+,+,+,=,-,=,-,+,-,-,+,+,3.497983612,-3.646735674
+118,SUPER JUNIOR,ì§„ì‹¬ All My Heart,+,+,+,+,-,=,+,-,-,+,-,+,11.54039328,-18.73090506
+119,Shaggy,Angel,+,+,+,+,-,=,+,+,-,-,+,+,-7.869468507,-32.15964646
+120,Little Mix,No More Sad Songs (feat. Machine Gun Kelly),+,+,+,+,-,-,+,-,+,+,+,+,46.44899528,-8.077345168
+121,Drew Baldridge,Drama,+,+,+,=,-,-,+,-,-,+,+,+,-11.10909999,-7.580209485
+122,Stray Kids,Mixtape#4,+,+,+,+,-,-,+,-,-,+,-,+,33.08737369,-13.82943827
+123,Kid Rock,When It Rains,+,+,+,+,-,=,-,-,+,-,+,+,17.52839117,12.3430578
+124,Sin Bandera,KilÃ³metros - Bachata Version,+,+,+,+,-,=,-,+,-,+,+,+,-4.798893552,13.38002673
+125,Booker T. Jones,B-A-B-Y,+,+,+,=,-,=,-,+,+,+,+,+,-14.47838921,-5.008754864
+126,Big Pun,100% (feat. Tony Sunshine),+,+,+,+,-,-,+,-,-,-,+,+,9.092749323,-15.44524874
+127,Sean Paul,No Lie (feat. Dua Lipa),-,+,+,+,-,=,+,-,-,+,-,+,-19.97642224,-16.84746779
+128,Streetlight Manifesto,Me and Julio Down by the School Yard,+,+,+,+,-,=,+,-,+,-,+,+,10.14227265,14.81027886
+129,Judas Priest,Troubleshooter,+,+,+,+,-,=,+,-,+,+,+,+,3.41818125,12.25953538
+130,Amerie,Tell Me You Love Me,+,+,+,+,-,=,+,+,-,+,+,+,-7.81792376,-17.2651195
+131,Billy Talent,Worker Bees,+,+,+,=,-,=,+,-,+,-,-,+,21.4766981,-2.296590432
+132,Demi Lovato,Hold Up,+,+,+,+,-,=,+,-,-,-,+,+,10.19143247,14.4326328
+133,Bowling For Soup,If Only,-,+,+,+,-,=,+,-,-,+,+,+,-22.85234746,4.949380232
+134,Skindred,Straight Jacket,+,+,+,+,-,=,+,-,+,-,+,+,-9.505012335,10.82111719
+135,Alien Ant Farm,Smooth Criminal,+,+,+,+,-,-,+,-,+,-,+,+,-11.34619434,9.503923436
+136,NCT,Best Day Ever,+,+,+,=,-,-,-,-,-,-,+,+,19.62739179,-3.54911276
+137,Empire of the Sun,Half Mast - Slight Return,+,+,+,+,-,-,-,-,+,-,+,+,0.542629144,11.13638732
+138,Jess Glynne,I'll Be There,+,+,+,+,-,=,+,-,-,+,-,+,47.69495243,-9.887053306
+139,Mike Perry,All Star,+,+,+,+,-,=,+,-,-,+,-,+,41.23323591,-6.788609101
+140,La Sonora Dinamita,Cumbia Barulera,-,+,+,+,-,=,-,+,-,-,+,+,-18.73019646,-18.64832965
+141,Blu-Swing,Flash,+,+,+,+,-,=,+,-,+,-,+,+,4.760248501,9.731442416
+142,Never Shout Never,Love Is Our Weapon,-,+,+,+,-,=,-,+,+,-,+,+,-21.73884132,4.156255117
+143,Gym Class Heroes,The Fighter (feat. Ryan Tedder),+,+,+,+,-,=,+,-,-,+,-,+,38.90769546,-12.09761224
+144,Kelis,Home,+,+,+,+,-,=,+,-,+,+,+,+,-7.780823773,13.04342066
+145,Sugar Ray,Mr. Bartender (It's So Easy),+,+,+,+,-,-,+,-,+,-,+,+,0.045423797,7.255254142
+146,Billy Ocean,License to Chill,+,+,+,=,-,=,+,+,-,-,+,+,-10.59723041,-3.847370398
+147,Park Sang Min,A Loved One,-,+,+,+,-,=,-,-,+,-,+,+,-22.97537696,21.17597657
+148,The Rolling Stones,Rock And A Hard Place,+,+,+,+,-,-,+,-,+,-,+,+,0.27136253,13.18998053
+149,Saves The Day,Bones,+,-,+,=,-,=,+,-,-,-,+,+,-1.328153971,-5.290079143
+150,The Style Council,Luck,=,+,+,+,-,=,+,-,+,+,+,+,-21.29819128,23.74557947
+151,DJ Nelson,Una Mujer Remix,+,+,+,+,-,=,+,-,+,+,+,+,39.31528366,-15.18685171
+152,Five,Don't Wanna Let You Go - US Edit,+,+,+,+,-,-,+,+,-,-,+,+,-8.24126091,-14.03245698
+153,5 Seconds of Summer,Hey Everybody!,+,+,+,+,-,=,-,-,-,-,+,+,28.42861789,13.82413375
+154,Matchbox Twenty,Disease,=,+,+,=,-,-,+,-,-,-,+,+,-17.72188111,-3.339224669
+155,Rick James,Love Gun,+,+,+,+,-,=,+,-,+,-,+,+,12.13499782,7.350367597
+156,Tina Turner,I Wrote a Letter - 2015 Remaster,+,+,+,+,-,=,-,-,+,+,+,+,2.046831392,7.354636292
+157,Tina Turner,I Wrote a Letter,-,+,+,+,-,=,-,-,+,+,+,+,-22.73798276,4.08278498
+158,Amber Mark,Heatwave,+,+,+,+,-,-,+,-,+,-,+,+,12.56706618,11.73105401
+159,Megadeth,Train Of Consequences - Remastered 2004,+,+,+,=,-,=,+,-,+,-,-,+,-5.790585235,-2.046412704
+160,Randy Houser,How Country Feels,-,+,+,+,-,=,+,-,-,-,+,+,-20.35866466,-13.95124975
+161,SUPER JUNIOR,ì¶¤ì„ ì¶˜ë‹¤ (Midnight Blues),+,+,+,+,-,-,-,-,+,-,+,+,1.838293788,-13.97593501
+162,Eurythmics,Let's Go! - Remastered Version,+,+,+,+,-,=,+,+,-,+,+,+,8.485993635,12.07739212
+163,Juanes,A Dios Le Pido,-,+,+,+,-,=,+,-,-,-,+,+,-19.32160951,-21.81357462
+164,Iration,Summer Nights,+,+,+,+,-,=,-,-,-,-,+,+,-2.853738994,13.91984269
+165,Ava Max,OMG What's Happening,+,+,+,+,-,-,+,-,-,-,+,+,51.48990152,14.88499179
+166,The Offspring,All I Have Left Is You,+,+,+,=,-,=,-,-,-,-,+,+,-16.0748231,-8.194609635
+167,Little Mix,Dear Lover,+,+,+,=,-,=,+,+,-,-,+,+,28.14988465,0.646567464
+168,Rancid,A Power Inside,+,+,+,+,-,=,+,-,-,+,+,+,3.758903145,-13.25759641
+169,Dazz Band,Let It Whip,+,+,+,+,-,-,+,+,+,-,+,+,28.62518401,19.98818502
+170,Galantis,Faith (with Dolly Parton) [feat. Mr. Probz],+,+,+,=,-,=,+,+,-,-,+,+,49.29537176,8.561143161
+171,Bowling For Soup,I Can't Stand L.A.,-,+,+,+,-,=,+,-,-,+,+,+,-22.64835977,11.05105605
+172,Taproot,Breathe,-,+,+,+,-,=,+,-,+,-,+,+,-20.79339906,4.639187213
+173,Ha Dong-Jin,I want to try a love - Crossover Mix,-,+,+,+,-,=,+,-,+,+,+,+,-25.48635115,24.9098719
+174,AS IT IS,Hey Rachel,+,+,+,=,-,=,+,-,-,-,+,+,-14.82246274,-10.03386035
+175,Fifteen,Did You Know,+,-,+,+,-,=,+,-,+,-,+,+,-17.24676471,-14.599394
+176,Hermes House Band,Is This the Way to Amarillo (feat. Tony Christie),+,+,+,+,-,=,+,-,-,+,+,+,17.99430025,16.45676717
+177,Bryan Adams,Before The Night Is Over,+,+,+,+,-,=,+,-,+,+,+,+,-10.62255539,11.6386279
+178,Trace Adkins,Just the Way We Do It,+,+,+,+,-,=,-,-,+,-,+,+,1.783614256,9.345087806
+179,(Hed) P.E.,Ordo (ab Chao),+,+,+,+,=,=,+,-,-,+,+,+,-3.840029699,-16.8369796
+180,XTC,Let's Have Fun - 'White Music' Out-Take,=,+,+,+,-,=,+,+,+,+,+,+,-15.23933284,-22.17536669
+181,Deitrick Haddon,D.D.,+,+,-,+,-,=,+,+,+,-,+,+,0.104219615,-31.43201918
+182,Patrick Hofmann,Fly - Markus Amenaza Remix,-,+,+,+,-,=,+,-,+,-,+,+,-23.38603249,8.999788843
+183,City High,What Would You Do?,+,+,+,+,-,=,+,+,-,+,+,+,-16.20078851,-22.53045862
+184,Bryan Adams,The Last Night On Earth,+,+,+,+,-,=,-,-,+,+,+,+,-0.845192763,13.98735053
+185,Grimes,Pin,+,+,+,+,-,=,+,-,+,+,+,+,24.35197735,29.42294758
+186,Dru Down,Fugitive,-,+,+,+,-,=,+,-,-,-,+,+,-19.8652631,-17.68336623
+187,Tegan and Sara,The Cure,+,+,+,+,-,=,-,-,-,-,+,+,7.231549442,29.22202437
+188,Lady Gaga,Electric Chapel,+,+,+,+,-,-,+,-,+,+,+,+,13.29218093,13.87789304
+189,Stevie Nicks,Starshine,+,+,+,+,-,=,+,-,+,+,+,+,0.086401307,22.22035497
+190,Phil Vassar,I Wish You Were Beer,+,+,+,+,-,=,+,-,-,-,+,+,-11.48365636,10.53368949
+191,The Thrills,Big Sur,-,+,+,+,-,-,-,-,+,+,+,+,-21.66908844,11.29322224
+192,The Offspring,She's Got Issues,+,+,+,+,-,=,+,+,-,+,+,+,30.56533543,12.91993888
+193,We As Human,Taking Life,-,+,+,=,-,=,+,-,-,+,-,+,-19.70644419,-3.603724983
+194,Jeon Chul,Haeundae Story - Crossover Mix,-,+,+,+,-,-,+,+,+,+,+,+,-23.28612855,8.266166258
+195,Brothers Osborne,All The Good Ones Are,+,+,+,+,-,=,+,-,+,-,+,+,30.61593728,20.17690381
+196,Real Friends,Get By,+,+,+,+,-,=,+,-,-,+,-,+,-14.77087457,-18.07287858
+197,Kid Rock,Drinking Beer with Dad,-,+,+,+,-,=,+,+,+,-,+,+,-20.61148029,3.257473769
+198,Royal Republic,Flower Power Madness,+,+,+,+,-,-,+,-,+,+,+,+,12.83044598,9.744855111
+199,Lady Gaga,Rain On Me (with Ariana Grande),+,+,+,+,-,=,+,-,-,+,+,+,59.54793641,14.95197513
+200,Avicii,Sunset Jesus,+,+,+,+,-,=,+,-,-,-,+,+,34.16990717,-6.768083967
+201,Michael McDonald,Storm Before The Calm,+,+,+,+,-,=,+,-,-,-,-,+,-9.508904482,-19.73708958
+202,Britney Spears,Get Back,+,+,+,=,-,=,+,+,+,-,+,+,18.73357598,3.195775647
+203,The Highwaymen,It Is What It Is,+,+,+,+,-,=,+,+,-,-,+,+,-5.916494512,6.550911993
+204,The Who,Mirror Door,-,+,+,+,-,=,-,+,-,+,+,+,-23.64454437,10.96108066
+205,The Suicide Machines,Awkward Always,+,+,+,+,-,=,+,-,+,+,+,+,12.38773078,-17.50618277
+206,Tamela Mann,Guest of Honor (Live),+,+,+,=,-,=,+,-,-,-,-,+,-3.23190939,1.495447604
+207,Datura,Infinity - DJ MNS vs. E-Maxx Remix,-,+,+,+,-,-,+,-,+,-,+,+,-23.97063918,21.09266144
+208,Keane,Bend & Break (Basto vs. Keane) - Basto Remix,+,+,+,+,-,=,+,-,+,-,+,+,-7.786667936,13.08668552
+209,Park Sang Min,A Loved One - 2008 Remix,-,+,+,+,-,=,-,-,+,+,+,+,-24.96115071,20.92816009
+210,Crazy Town,Darkside,+,+,+,=,-,-,+,-,-,-,-,+,13.5465651,-3.330181087
+211,Farruko,Papi ChampÃº,+,+,+,+,-,=,+,+,-,-,+,+,18.6160762,-18.83671137
+212,The Shirelles,20th Century Rock & Roll,-,+,+,=,-,=,-,+,-,-,+,+,-21.39626775,1.558248452
+213,Aleks Syntek,Otra Parte De Mi - Remastered,+,+,+,=,-,=,+,+,-,-,+,+,-9.485661952,3.022510363
+214,Eagles Of Death Metal,Stuck in the Metal,+,+,+,+,-,-,+,+,-,-,-,+,8.582462511,11.35839982
+215,As Tequileiras do Funk,Surra De Bunda - Sidney Samson Remix,+,+,+,+,-,=,+,-,+,-,+,+,-17.69963316,11.76320367
+216,Lady Gaga,Rain On Me,+,+,+,+,-,=,+,-,-,+,+,+,-4.893658368,6.453302901
+217,Terri Clark,Watered Down Whiskey,+,+,+,+,-,=,+,-,-,+,+,+,-7.490673568,-27.38940804
+218,SHINee,Always Love,+,+,+,+,-,=,-,-,-,-,+,+,-4.260935106,-28.93351495
+219,Blackberry Smoke,Let Me Help You (Find The Door),+,+,+,+,-,=,+,-,+,+,+,+,-5.800244758,13.32490014
+220,[spunge],Skanking Song,+,+,+,+,-,=,+,-,-,-,+,+,-6.24367989,39.61302079
+221,Aleks Syntek,Otra Parte De MÃ­ - Remastered 2002,+,+,+,=,-,=,+,+,-,-,+,+,-11.46751776,2.75376905
+222,Blue,This Temptation - Blacksmith R&B Radio Rub,+,+,+,+,-,=,+,-,-,-,+,+,-13.36178806,-13.46875276
+223,DamiÃ¡n CÃ³rdoba,Te Quiero Dar Amor,+,+,+,+,-,=,+,+,-,-,+,+,-8.069828712,-15.35561281
+224,Train,I'm Drinkin' Tonight,+,+,+,+,-,-,+,-,-,+,+,+,1.798298344,9.264355805
+225,Jason Aldean,Johnny Cash,+,+,+,=,-,=,+,-,-,-,+,+,30.25226832,-0.013565633
+226,Daddy Yankee,Que Tire Pa Lante,-,+,+,+,-,=,-,-,-,-,+,+,-18.92408424,-24.8141488
+227,Sean Kingston,My Girlfriend,+,+,+,=,-,=,+,-,-,-,+,+,5.412349424,4.781721751
+228,Michael Jackson,Do You Know Where Your Children Are (Original Version),+,+,+,+,-,=,+,+,+,+,+,+,18.33813197,-16.7418735
+229,Dwight Yoakam,The Heartaches Are Free,+,+,+,+,-,=,-,-,-,-,+,+,-11.38831075,9.806196569
+230,Stunna 4 Vegas,PUNCH ME IN 5,+,+,+,+,-,=,+,+,-,-,+,+,-10.77745264,12.8136973
+231,Nat King Cole,The Game Of Love,+,+,+,=,-,=,+,+,-,-,+,+,-13.78101712,-10.28159819
+232,Israel Houghton,Mercies - Kirk Franklin,+,+,+,+,-,-,+,-,-,-,+,+,-3.423242685,10.60815796
+233,KISS,All For The Love Of Rock & Roll,+,-,+,=,-,=,+,-,-,+,-,+,9.800840442,2.097494613
+234,The Vaccines,All In Vain,+,+,+,+,-,=,+,-,+,-,+,+,11.81497842,9.778308532
+235,Langhorne Slim,Put It Together,+,+,+,+,-,=,-,+,+,-,+,+,24.51316337,12.91895835
+236,KMFDM,Strut (Disco Balls Mix) by Andy Selway,=,+,+,+,-,=,+,-,+,+,-,+,-19.55264865,10.51765903
+237,Snupo,Kali Kali Maha Kali,-,+,+,+,-,=,-,+,+,+,-,+,-19.18198661,-22.86425681
+238,Rush,Far Cry,+,+,+,+,-,=,-,-,-,+,+,+,16.66226232,11.25309678
+239,Bullet For My Valentine,Disappear,+,-,=,+,-,=,+,-,+,+,-,+,11.25540463,-16.56296194
+240,*NSYNC,I Want You Back - Radio Edit,+,+,+,=,-,-,+,-,+,+,+,+,32.24751129,0.188075624
+241,UB40,After Tonight,+,+,-,+,-,=,+,-,+,-,+,+,-16.03941111,22.1230431
+242,XTC,Reel By Reel - Unused Single Recording,=,+,+,+,-,=,+,+,-,+,+,+,-20.65342918,18.85925994
+243,Billy Idol,One Breath Away - Paul Oakenfold Remix,+,+,+,+,-,=,+,-,+,-,+,+,0.937059343,8.133448035
+244,Chromeo,Woman Friend,+,+,-,=,-,=,+,+,+,-,+,+,-3.838323595,-1.556138539
+245,I Set My Friends On Fire,Versace Tamagotchi,+,+,+,=,-,=,+,+,-,+,+,+,0.339091734,5.008775495
+246,Faster Pussycat,It's Only Rock and Roll - Live,+,+,+,+,-,=,+,-,+,+,-,+,-12.47991869,10.43647844
+247,*NSYNC,Up Against The Wall,+,+,+,+,-,-,+,-,-,+,+,+,8.204762387,14.21128685
+248,Little Mix,Love Me Like You - Christmas Mix,+,+,+,+,-,=,-,-,-,+,+,+,17.3116852,-8.951753644
+249,PAX JAPONICA GROOVE,Vivaldi Four Seasons Winter 2.,-,+,+,+,-,=,-,-,+,-,+,+,-24.96506911,20.9605227
