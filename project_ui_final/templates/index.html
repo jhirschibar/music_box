@@ -1,0 +1,160 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<img src='static/MusicBox_Banner.png' alt='MusicBox Logo' width=50% height='auto' class="center">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="{{ url_for('static', filename='jquery-3.5.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='d3.v5.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='d3-tip.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='dropdown.js') }}"></script>
+</head>
+
+<body>
+  
+  
+    <form method="POST" autocomplete="off" class="button">
+      
+
+<div class="row">
+  
+
+  <div class="column left">
+    <div style="text-align: right; vertical-align: middle;">
+      <h2>Enter Song:</h2>
+    </div>
+    <div style="margin-top: 20px; margin-bottom: 20; text-align: center;">
+      <h2>Adjust Song Features</h2>
+      <span class="help-tip"><p>Move the sliders to indicate how you would like to determine the song features for your recommended songs. Once you have adjusted the features, hit 'Submit' to see your recommendations!</p></span>
+    </div>
+    
+  
+    <div class="rangeslider"> 
+      <h4>Danceability</h4>
+      <span class="help-tip"><p>Lower indicates recommendation should be less suitable for dancing while higher indicates the song should be more danceable. </p></span>
+      <input formmethod="POST" id="sliderRange" class="myslider" type="range" name='dance' min="1" max="5" value="3" />
+      <p style='line-height: 0px; text-align: end;'><span id="demo", class="rangeVal"></span></p> 
+    </div>  
+  
+
+  <div class="rangeslider"> 
+    <h4>Energy</h4>
+    <span class="help-tip"><p>Lower indicates recommendations should be less intense (like Bach) while higher indiates more intense (like death metal).</p></span>
+    <input type="range" min="1" max="5" value="3"class="myslider" id="sliderRange" name="energy"/> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo", class="rangeVal"></span></p>             
+  </div> 
+
+
+  <div class="rangeslider"> 
+    <h4>Loudness</h4>
+    <span class="help-tip"><p>Lower indicates the recommendations should be less loud than your song, while higher indicaters louder.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="loudness"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+
+  <div class="rangeslider"> 
+    <h4>Speech</h4>
+    <span class="help-tip"><p>Lower indicates the recommendations should more musical, while higher values indicates songs that have more spoken words (like poetry).</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="speech"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Acousticness</h4>
+    <span class="help-tip"><p>Lower indicates less acoustic recommendations, while higher indicates more acoustic.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="acousticness"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Instrumentalness</h4>
+    <span class="help-tip"><p>Lower indicate more vocals, while higher indicate less vocals.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="instrumentalness"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Liveness</h4>
+    <span class="help-tip"><p>Lower indicate the recommendations should be studio recorded, while higher indicates live music.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="liveness"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Valence</h4>
+    <span class="help-tip"><p>Lower indicates recommendations should sound more negative (sad or anrgry), while higher indicates more positive (happy/cheerful).</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="valence"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Lyrical Valence</h4>
+    <span class="help-tip"><p>Lower indicates recommendations should have more negative lyrics (sad/angry), while higher indicates more positive lyrics (happy/cheerful).</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="tempo"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Tempo</h4>
+    <span class="help-tip"><p>Lower indicates recommendations should have a slower beat, while higher indicates a faster beat.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="tempo"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+
+  <div class="rangeslider"> 
+    <h4>Key</h4>
+    <span class="help-tip"><p>Lower indicates the key of recommendations should be lower, while higher indicates a higher key.</p></span>
+    <input type="range" min="1" max="5" value="3" class="myslider" id="sliderRange" name="key"> 
+    <p style='line-height: 0px; text-align: end;'><span id="demo" class="rangeVal"></span></p> 
+  </div>
+  
+</div>
+<div class="column middle">
+  <div class='col-xs-12 col-sm-12 col-md-10 col-lg-10'>
+    <div class='input-group'>
+        <input id="autocomplete" class='form-control' type='text' name='songSearch'
+               placeholder='Begin typing a song...'/>
+        
+
+    </div>
+</div>
+  <div id="graph" class="svg-container" style="text-align: center;">
+    <script src="{{ url_for('static', filename='mastermap.js') }}"></script>
+    <script>
+    var x = '{{home_page}}'
+    if(x==1){
+        homeGraph();
+        }else{
+        updateGraph();
+    };
+    </script>
+  </div>
+  <div>
+    <p style="margin-right:40px; margin-left: 20px; font-weight: 500;">Why aren’t my recommendations next to the song I picked?</p>
+      <p style="margin-right:40px; margin-left: 20px; text-align: justify; text-justify: inter-word;">Each data point is one of the 250 most similar songs to your song based on your inputs. We’re sure you might be wondering why your song recommendations aren’t graphed right next to the song you picked. Music Box takes into account 12 different features, but unfortunately we can’t yet build a graph in 12-dimensional space. The graph you see reduces the 12 features down to 2-dimensional space; while the songs may look farther apart, they are the right recommendations!</p>
+  </div>
+</div>
+
+
+<div class="column right">
+  <div>
+    <input type='submit' id="button" class="button" onclick="remove();" style="background-color: #01665e;"/>
+  </form>
+  </div>
+
+
+<div style="margin-top: 20px; margin-bottom: 20; text-align: center;">
+  <h2>Recommended Songs</h2>
+</div>
+
+{% for iframe in iframes %}
+    
+        <div class="spotify">
+         <iframe id="iframe{{loop.index}}" src="{{iframe}}" frameborder="0" allowtransparency="true" allow="encrypted-media" width="530" height="100"></iframe>
+        </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+</body>
