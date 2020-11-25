@@ -1,8 +1,8 @@
 # music_box
 Playlist generator for Spotify users
 
-#DESCRIPTION
-##Data Collection and Processing
+# DESCRIPTION
+## Data Collection and Processing
 All of the files to generate the dataset are located in the CODE\data_collection_and_processing folder. 
 NOTE: Since we used multithreading in order to expedite the data pipeline creation process, there were 8 duplicates of each of the SampleLyricGenius and SampleVADERSentimentAnalysis notebooks that all ran simultaneously on chunks of the whole dataset. In order to save space, we have included the template for each notebook and a small dataset that can be used to demonstrate how the notebooks work. 
 
@@ -18,7 +18,7 @@ ResultsAnalysis.ipynb: This notebook was used to analyze the results of our user
 
 After processing the data a bit more manually for duplicates and removing tracks that were interviews rather than actual songs, we ended up with a final dataset of 391,548 songs, with the track id, song name, artist, album, and audio features.
 
-##User Interface Build
+## User Interface Build
 All of the files to build our app are located in the CODE\project_ui_final folder. We used Flask, Python, JavaScript, D3, JQuery, HTML and CSS to create the user interface. Here is a brief description of the files:
 	- app.py: This is the main file that creates and ultimately runs our Flask app. It is responsible for feeding information between the user interface and our recommendation algorithm.
 recommender.py: Houses the recommendation algorithm that produces the final 20 recommended songs and the PCA data used in the graph on our site.
@@ -35,14 +35,14 @@ recommender.py: Houses the recommendation algorithm that produces the final 20 r
 	- requirements.text: Contains all the required Python packages for our app. Needed for the Heroku deployment and Docker container build.
 	- Procfile: A Heroku specific file needed for Heroku deployment.
 
-##INSTALLATION
+# INSTALLATION
 Link to Unlisted YouTube Demo: https://youtu.be/eRUxgKFeeXY 
 
 Our app is hosted at the following link: https://out-of-the-music-box.herokuapp.com/
 
 NOTE: It is best viewed in full screen and in an incognito Google Chrome window.
 
-##BUILD INSTRUCTIONS
+## BUILD INSTRUCTIONS
 In the event the web application does not run for you, or crashes, please follow the steps below to run it locally:
 Ensure you have Docker installed on your local machine.
 Navigate via command line into the directory team065final/CODE/ project_ui_final .
@@ -53,6 +53,6 @@ From that directory, input the following two commands:
 Open Google Chrome, preferably in a large and incognito window.
 Navigate to: http://127.0.0.1:5000
 
-##USING THE APP
+## USING THE APP
 Once you have navigated to the website or have the code running locally, the first step is to go to the search bar (at the top) and search for a song you would like to find similar songs to. The search bar has a dropdown that will appear for you to select the song, artist, and album from; it may be a bit slow to load. You can adjust the audio features (on the left) using the slider bars to determine if each musical feature should be lower, similar, or higher than your selected song. When you are happy with your selection and weights, hit the submit button, wait a few seconds for the page to load, and see your recommendations!
 
