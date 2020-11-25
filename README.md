@@ -1,4 +1,4 @@
-# music_box
+# MUSIC BOX
 Playlist generator for Spotify users
 
 # DESCRIPTION
